@@ -2,15 +2,7 @@
   <div class="tsukkomis">
     <div id="timeline">
       <div>
-        <section class="year">
-          <h3>2017</h3>
-          <section>
-            <h4> 这里是日期和时间 </h4>
-            <ul>
-              <li>hehehehehhehhhehhhehhehhhehehehehhehhhehhhehhehhehehehehhehhhehhhehhehhhehehehehhehhhehhhehhehhehehehhhehehehehhehhhehhhehhehheheheh</li>
-            </ul>
-          </section>
-        </section>
+        <Tucao time="2017-08-29T16:24:00" content="hehhhehhehhehh"></Tucao>
         <section class="year">
           <h3>2016</h3>
           <section>
@@ -114,7 +106,12 @@
 </template>
 
 <script>
+  import Tucao from './Tucao.vue';
+
   export default {
+    components: {
+      Tucao,
+    },
     data () {
       return {
         msg: 'Just 不吐槽不酥胡',
@@ -124,11 +121,7 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-  h1, h2 {
-    font-weight: normal;
-  }
-
+<style>
   .tsukkomis {
     display: flex;
     flex: auto;
@@ -168,6 +161,7 @@
 
   #timeline section.year {
     position: relative;
+    min-width: 400px;
   }
 
   #timeline section.year:first-child section {
