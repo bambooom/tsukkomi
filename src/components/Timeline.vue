@@ -5,15 +5,23 @@
         <section class="year">
           <h3>2017</h3>
           <section>
+            <h4> 这里是日期和时间 </h4>
             <ul>
-              <li>hehehehehhehhhehhhehheh</li>
+              <li>hehehehehhehhhehhhehhehhhehehehehhehhhehhhehhehhehehehehhehhhehhhehhehhhehehehehhehhhehhhehhehhehehehhhehehehehhehhhehhhehhehheheheh</li>
             </ul>
           </section>
         </section>
         <section class="year">
           <h3>2016</h3>
           <section>
-            <h4>August</h4>
+            <h4> August 17th 8:25pm @ BJ</h4>
+            <ul>
+              <li>AAAAA</li>
+              <li>BBBBB</li>
+            </ul>
+          </section>
+          <section>
+            <h4> ?????</h4>
             <ul>
               <li>AAAAA</li>
               <li>BBBBB</li>
@@ -139,7 +147,7 @@
 
   #timeline div:after {
     content: '';
-    width: 2px;
+    width: 1px;
     position: absolute;
     top: .5rem;
     bottom: 0rem;
@@ -164,23 +172,25 @@
 
   #timeline section.year:first-child section {
     margin-top: -1.3em;
-    padding-bottom: 0px;
+    /*padding-bottom: 0px;*/
   }
 
   #timeline section.year section{
     position: relative;
     padding-bottom: 1.25em;
     margin-bottom: 2.2em;
+    word-wrap: break-word;
   }
 
   #timeline section.year section h4 {
     position: absolute;
     bottom: 0;
+    right: 0;
     font-size: .9em;
     font-weight: 400;
     line-height: 1.2em;
     margin: 0;
-    padding: 0 0 0 89px;
+    /*padding: 0 0 0 89px;*/
     color: #c5c5c5;
   }
   #timeline section.year section ul {
