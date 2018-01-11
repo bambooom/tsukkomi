@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <h1>💁🏼</h1>
-    <Top></Top>
+    <img class="top-header-img" src="./assets/favicon.png">
+    <div class="top-header">
+      <h1>Just 不吐槽不酥胡</h1>
+    </div>
     <Timeline></Timeline>
   </div>
 </template>
 
 <script>
-import Top from './components/Top.vue';
 import Timeline from './components/Timeline.vue';
 
 export default {
   name: 'app',
   components: {
-    Top,
     Timeline,
   },
 }
@@ -40,5 +40,14 @@ export default {
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+  }
+
+  .top-header{
+    margin-bottom: 20px;
+  }
+
+  .top-header-img {
+    width: 70px;
+    margin: 0 auto;
   }
 </style>
